@@ -1,0 +1,318 @@
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 22px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+$font-size-main-header: 48px;
+
+$font-family-icon: "Fontello";
+$font-family-text-normal: "Source_Sans_Pro_normal", "Arial", sans-serif;
+$font-family-text-bolder: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+$font-family-text-bold: "Source_Sans_Pro_bold", "Arial", sans-serif;
+
+@mixin btn{
+  display: block;
+
+  font-family: $font-family-text-bolder;
+  text-align: center;
+
+  border: 2px solid black;
+  border-radius: 1px;
+
+  cursor: pointer;
+}
+
+@mixin title{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+
+  text-align: center;
+
+  .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-xxl;
+  }
+
+  .title__text {
+    margin: 0;
+
+    font-size: $font-size-md;
+    color: #888888;
+  }
+}
+
+@font-face {
+  font-family: Fontello;
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff);
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff2);
+}
+
+@font-face {
+  font-family: Source_Sans_Pro_normal;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source_Sans_Pro_bolder;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source_Sans_Pro_bold;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-family-text-normal;
+}
+
+.icon {
+  font-family: $font-family-icon;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.main {
+  height: 858px;
+
+  background-color: #f3da33;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    height: 98px;
+    padding-left: 30px;
+  }
+
+  &__nav {
+    display: block;
+    margin-right: 357px;
+
+    font-size: $font-size-lg;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__logo_wrapper {
+    margin-right: 255px;
+    margin-bottom: -8px;
+  }
+
+  &__socials {
+    .icon {
+      padding-left: 8px;
+
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  height: 858px - 98px;
+  padding-top: 254px;
+
+  .info {
+    width: 60%;
+  }
+
+  &__title {
+    margin: 0;
+    padding-left: 20px;
+
+    font-family: $font-family-text-bold;
+    font-size: $font-size-main-header;
+    text-align: center;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 40px;
+    padding-right: 7%;
+    padding-left: 9%;
+
+    font-size: $font-size-md;
+    text-align: center;
+  }
+
+  &__btn {
+    @include btn;
+
+    width: 253px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 13px;
+
+    font-size: $font-size-lg;
+  }
+}
+
+
+
+
+
+
+
+
+
+.features {
+
+  .title {
+    @include title;
+  }
+
+  &__row-flex {
+    margin-bottom: 40px;
+    padding-top: 86px;
+  }
+
+  &__item {
+    display: flex;
+    width: 33%;
+    margin-bottom: 85px;
+  }
+
+  &__icon {
+    width: 130px;
+    height: 60px;
+    margin-left: 20px;
+
+    background-image: url(../img/iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    padding-top: 5px;
+    padding-left: 32px;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 10px;
+
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-lg;
+  }
+
+  &__text {
+    display: block;
+
+    font-size: $font-size-sm;
+    color: #888888;
+  }
+}
+
+
+
+
+
+
+
+
+
+.price {
+
+  .title {
+    @include title;
+  }
+
+  &__row-flex {
+    justify-content: center;
+    padding-top: 80px;
+  }
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+
+  &__pic {
+    width: 103px;
+    height: 103px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__pic_basic {
+    background-image: url(../img/iphone-circle.png);
+  }
+
+  &__pic_standart {
+    background-image: url(../img/laptop-circle.png);
+  }
+
+  &__pic_enterprice {
+    background-image: url(../img/desktop-circle.png);
+  }
+
+  &__name {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 18px;
+
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-xl;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: $font-size-xs;
+    line-height: 20px;
+    text-align: center;
+    color: #888888;
+  }
+
+  &__cost {
+    margin: 0;
+    
+    font-family: $font-family-text-bolder;
+    font-size: $font-size-xxl;
+  }
+
+  &__length {
+    display: block;
+
+    color: #888888;
+  }
+
+}
