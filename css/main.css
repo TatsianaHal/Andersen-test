@@ -103,8 +103,8 @@ body {
     font-size: 20px;
     color: #888888; }
 .features__row-flex {
-  margin-bottom: 40px;
-  padding-top: 86px; }
+  padding-top: 86px;
+  padding-bottom: 40px; }
 .features__item {
   display: flex;
   width: 33%;
@@ -146,7 +146,8 @@ body {
     color: #888888; }
 .price__row-flex {
   justify-content: center;
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 77px; }
 
 .price-item {
   display: flex;
@@ -172,18 +173,125 @@ body {
     font-size: 24px; }
   .price-item__text {
     display: block;
-    padding-left: 30px;
+    margin-bottom: 38px;
     padding-right: 30px;
+    padding-left: 30px;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     color: #888888; }
   .price-item__cost {
+    display: block;
     margin: 0;
+    padding-bottom: 6px;
     font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
-    font-size: 32px; }
+    font-size: 32px;
+    border-bottom: 2px solid #000; }
   .price-item__length {
     display: block;
+    padding-top: 5px;
+    padding-bottom: 37px;
+    color: #888888; }
+  .price-item__btn {
+    display: block;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    padding-top: 13px;
+    font-size: 16px; }
+
+.portfolio .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .portfolio .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .portfolio .title .title__text {
+    margin: 0;
+    font-size: 20px;
+    color: #888888; }
+.portfolio__row-flex {
+  padding-top: 72px;
+  padding-bottom: 90px; }
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-bottom: 60px; }
+.portfolio__item {
+  width: 24%; }
+.portfolio__link {
+  display: block;
+  height: 226px;
+  cursor: pointer; }
+.portfolio__link:hover {
+  background-color: black; }
+  .portfolio__link:hover .portfolio__plus {
+    display: block; }
+  .portfolio__link:hover .portfolio__pict {
+    display: none; }
+.portfolio__plus {
+  display: none;
+  width: 100%;
+  height: 226px;
+  margin-bottom: -135px;
+  padding-top: 85px;
+  text-align: center; }
+.portfolio__icon-plus {
+  display: block;
+  margin: 0 auto;
+  font-size: 48px;
+  color: white; }
+.portfolio__pict {
+  width: 100%;
+  height: 226px;
+  margin-bottom: -50px; }
+.portfolio__social-info {
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+.portfolio__views {
+  display: block;
+  padding-left: 15px; }
+.portfolio__date {
+  display: block;
+  padding-right: 15px; }
+.portfolio__name {
+  padding-top: 15px;
+  text-align: center; }
+.portfolio__title {
+  display: block;
+  font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+  font-size: 22px; }
+.portfolio__text {
+  display: block;
+  font-size: 16px;
+  color: #888888; }
+
+.team .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .team .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .team .title .title__text {
+    margin: 0;
+    font-size: 20px;
     color: #888888; }
 
 /*# sourceMappingURL=main.css.map */
